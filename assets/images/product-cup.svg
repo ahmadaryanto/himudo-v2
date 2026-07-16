@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 140 180" fill="none">
+  <defs>
+    <linearGradient id="cupG" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#e0f2fe"/>
+      <stop offset="50%" stop-color="#bae6fd"/>
+      <stop offset="100%" stop-color="#7dd3fc"/>
+    </linearGradient>
+    <linearGradient id="cupW" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#0284c7" stop-opacity="0.7"/>
+    </linearGradient>
+  </defs>
+  <!-- Lid -->
+  <ellipse cx="70" cy="28" rx="48" ry="12" fill="#0369a1"/>
+  <rect x="28" y="22" width="84" height="12" rx="4" fill="#0c4a6e"/>
+  <!-- Body -->
+  <path d="M32 34 L40 155 Q40 168 70 168 Q100 168 100 155 L108 34 Z" fill="url(#cupG)" stroke="#38bdf8" stroke-width="1.5"/>
+  <!-- Water -->
+  <path d="M38 70 L44 150 Q44 160 70 160 Q96 160 96 150 L102 70 Z" fill="url(#cupW)"/>
+  <!-- Label -->
+  <rect x="48" y="90" width="44" height="36" rx="4" fill="#0284c7"/>
+  <text x="70" y="108" text-anchor="middle" font-size="8" font-weight="800" fill="#fff">Himudo</text>
+  <text x="70" y="118" text-anchor="middle" font-size="6" fill="#bae6fd">220 ml</text>
+  <!-- Shine -->
+  <path d="M45 50 L48 140" stroke="#fff" stroke-width="4" opacity="0.3" stroke-linecap="round"/>
+</svg>

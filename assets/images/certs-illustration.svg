@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 300" fill="none">
+  <defs>
+    <linearGradient id="shieldG" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="100%" stop-color="#0ea5e9"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Shield -->
+  <path d="M180 30 L280 70 V150 C280 210 230 255 180 275 C130 255 80 210 80 150 V70 Z" fill="url(#shieldG)" opacity="0.95"/>
+  <path d="M180 50 L260 82 V148 C260 198 220 236 180 254 C140 236 100 198 100 148 V82 Z" fill="#0c2d48" opacity="0.25"/>
+
+  <!-- Check -->
+  <path d="M140 150 L170 180 L230 110" stroke="#fff" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+
+  <!-- Orbiting badges -->
+  <circle cx="70" cy="90" r="28" fill="#fff" opacity="0.95"/>
+  <text x="70" y="95" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11" font-weight="800" fill="#0284c7">SNI</text>
+
+  <circle cx="300" cy="110" r="28" fill="#fff" opacity="0.95"/>
+  <text x="300" y="115" text-anchor="middle" font-family="system-ui,sans-serif" font-size="10" font-weight="800" fill="#16a34a">HALAL</text>
+
+  <circle cx="80" cy="220" r="28" fill="#fff" opacity="0.95"/>
+  <text x="80" y="225" text-anchor="middle" font-family="system-ui,sans-serif" font-size="10" font-weight="800" fill="#7c3aed">BPOM</text>
+
+  <circle cx="290" cy="230" r="28" fill="#fff" opacity="0.95"/>
+  <text x="290" y="235" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11" font-weight="800" fill="#ea580c">ISO</text>
+</svg>

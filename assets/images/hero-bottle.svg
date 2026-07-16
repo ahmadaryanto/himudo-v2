@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 440" fill="none">
+  <defs>
+    <linearGradient id="bottleBody" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#e0f2fe"/>
+      <stop offset="40%" stop-color="#bae6fd"/>
+      <stop offset="100%" stop-color="#7dd3fc"/>
+    </linearGradient>
+    <linearGradient id="waterFill" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#0284c7" stop-opacity="0.75"/>
+    </linearGradient>
+    <linearGradient id="capGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0369a1"/>
+      <stop offset="100%" stop-color="#0c4a6e"/>
+    </linearGradient>
+    <linearGradient id="labelBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0ea5e9"/>
+      <stop offset="100%" stop-color="#0284c7"/>
+    </linearGradient>
+    <filter id="softShadow" x="-20%" y="-10%" width="140%" height="130%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#0c2d48" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+
+  <!-- Cap -->
+  <rect x="108" y="18" width="64" height="28" rx="6" fill="url(#capGrad)"/>
+  <rect x="102" y="42" width="76" height="14" rx="4" fill="#075985"/>
+  <!-- Ring seal -->
+  <rect x="110" y="56" width="60" height="8" rx="2" fill="#0ea5e9" opacity="0.9"/>
+
+  <!-- Neck -->
+  <path d="M116 64h48v36c0 8-6 14-14 14h-20c-8 0-14-6-14-14V64z" fill="url(#bottleBody)" stroke="#7dd3fc" stroke-width="1.5"/>
+
+  <!-- Body -->
+  <path d="M88 118c0-12 10-22 22-22h60c12 0 22 10 22 22v260c0 18-14 32-32 32H120c-18 0-32-14-32-32V118z" fill="url(#bottleBody)" stroke="#38bdf8" stroke-width="2" filter="url(#softShadow)"/>
+
+  <!-- Water level -->
+  <path d="M92 200h96v166c0 14-12 26-28 26h-40c-16 0-28-12-28-26V200z" fill="url(#waterFill)"/>
+  <!-- Water surface wave -->
+  <path d="M92 200c12-8 24 4 36-2s24-6 36 2 12 4 24-2v8H92v-6z" fill="#7dd3fc" opacity="0.5"/>
+
+  <!-- Shine -->
+  <path d="M108 130c0 0-4 40-4 100s2 80 2 80" stroke="#fff" stroke-width="8" stroke-linecap="round" opacity="0.35"/>
+
+  <!-- Label -->
+  <rect x="100" y="230" width="80" height="100" rx="8" fill="url(#labelBg)"/>
+  <text x="140" y="268" text-anchor="middle" font-family="system-ui,sans-serif" font-size="16" font-weight="800" fill="#fff">Himudo</text>
+  <text x="140" y="288" text-anchor="middle" font-family="system-ui,sans-serif" font-size="8" font-weight="600" fill="#e0f2fe" letter-spacing="1">AIR MINERAL</text>
+  <!-- Drop icon on label -->
+  <path d="M140 300c0 0-8 10-8 16a8 8 0 0016 0c0-6-8-16-8-16z" fill="#fff" opacity="0.9"/>
+  <text x="140" y="322" text-anchor="middle" font-family="system-ui,sans-serif" font-size="7" fill="#bae6fd">Kaya Oksigen</text>
+
+  <!-- Bubbles -->
+  <circle cx="120" cy="250" r="4" fill="#fff" opacity="0.4"/>
+  <circle cx="155" cy="270" r="3" fill="#fff" opacity="0.35"/>
+  <circle cx="130" cy="290" r="2.5" fill="#fff" opacity="0.3"/>
+  <circle cx="160" cy="180" r="3" fill="#fff" opacity="0.25"/>
+</svg>

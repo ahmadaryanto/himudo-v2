@@ -1,0 +1,19 @@
+# Dependencies
+node_modules/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+Desktop.ini
+*.log
+.vscode/
+.idea/
+
+# Env
+.env
+.env.*
+
+# Playwright / local temp
+test-results/
+playwright-report/
+blob-report/

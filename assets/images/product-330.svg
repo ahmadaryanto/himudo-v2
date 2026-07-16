@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 200" fill="none">
+  <defs>
+    <linearGradient id="b330" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#e0f2fe"/>
+      <stop offset="100%" stop-color="#7dd3fc"/>
+    </linearGradient>
+    <linearGradient id="w330" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.45"/>
+      <stop offset="100%" stop-color="#0284c7" stop-opacity="0.7"/>
+    </linearGradient>
+  </defs>
+  <rect x="38" y="8" width="24" height="16" rx="3" fill="#0c4a6e"/>
+  <rect x="34" y="22" width="32" height="8" rx="2" fill="#0369a1"/>
+  <path d="M36 30h28v18c0 4-3 8-8 8H44c-5 0-8-4-8-8V30z" fill="url(#b330)" stroke="#7dd3fc"/>
+  <path d="M28 58c0-6 5-12 12-12h20c7 0 12 6 12 12v118c0 10-8 18-18 18H46c-10 0-18-8-18-18V58z" fill="url(#b330)" stroke="#38bdf8" stroke-width="1.5"/>
+  <path d="M32 95h36v75c0 6-5 12-14 12H46c-9 0-14-6-14-12V95z" fill="url(#w330)"/>
+  <rect x="34" y="105" width="32" height="40" rx="4" fill="#0284c7"/>
+  <text x="50" y="125" text-anchor="middle" font-size="7" font-weight="800" fill="#fff">Himudo</text>
+  <text x="50" y="136" text-anchor="middle" font-size="5.5" fill="#bae6fd">330 ml</text>
+  <path d="M38 70 L40 160" stroke="#fff" stroke-width="3" opacity="0.3" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 200" fill="none">
+  <defs>
+    <linearGradient id="db" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#e0f2fe"/>
+      <stop offset="100%" stop-color="#7dd3fc"/>
+    </linearGradient>
+    <linearGradient id="dw" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#0284c7" stop-opacity="0.75"/>
+    </linearGradient>
+  </defs>
+  <!-- Cap -->
+  <rect x="48" y="6" width="24" height="14" rx="3" fill="#0c4a6e"/>
+  <rect x="44" y="18" width="32" height="7" rx="2" fill="#0369a1"/>
+  <!-- Neck -->
+  <path d="M46 25h28v14c0 3-2 6-6 6H52c-4 0-6-3-6-6V25z" fill="url(#db)"/>
+  <!-- Dumbell body - wider mid grip look -->
+  <path d="M30 48c0-6 5-12 12-12h36c7 0 12 6 12 12v20c0 4-2 8-6 10l-4 2c-4 2-6 6-6 10v50c0 4 2 8 6 10l4 2c4 2 6 6 6 10v20c0 10-8 18-18 18H48c-10 0-18-8-18-18v-20c0-4 2-8 6-10l4-2c4-2 6-6 6-10V90c0-4-2-8-6-10l-4-2c-4-2-6-6-6-10V48z" fill="url(#db)" stroke="#38bdf8" stroke-width="1.5"/>
+  <!-- Water -->
+  <path d="M36 100h48v70c0 6-5 12-14 12H50c-9 0-14-6-14-12v-70z" fill="url(#dw)"/>
+  <!-- Label band -->
+  <rect x="38" y="108" width="44" height="38" rx="5" fill="#0284c7"/>
+  <text x="60" y="125" text-anchor="middle" font-size="7" font-weight="800" fill="#fff">Himudo</text>
+  <text x="60" y="136" text-anchor="middle" font-size="5.5" fill="#bae6fd">500 ml</text>
+  <!-- Grip lines -->
+  <line x1="42" y1="72" x2="78" y2="72" stroke="#0ea5e9" stroke-width="1" opacity="0.4"/>
+  <line x1="42" y1="78" x2="78" y2="78" stroke="#0ea5e9" stroke-width="1" opacity="0.4"/>
+  <path d="M42 55 L44 90" stroke="#fff" stroke-width="3" opacity="0.3" stroke-linecap="round"/>
+</svg>
