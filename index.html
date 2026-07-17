@@ -30,7 +30,8 @@
           <li><a href="#beranda" class="nav__link is-active">Beranda</a></li>
           <li><a href="#tentang" class="nav__link">Tentang</a></li>
           <li><a href="#produk" class="nav__link">Produk</a></li>
-          <li><a href="#keunggulan" class="nav__link">Keunggulan</a></li>
+          <li><a href="#galeri" class="nav__link">Galeri</a></li>
+          <li><a href="#video" class="nav__link">Video</a></li>
           <li><a href="#kontak" class="nav__link">Kontak</a></li>
         </ul>
       </nav>
@@ -58,8 +59,9 @@
       <a href="#beranda" class="mobile-menu__link">Beranda</a>
       <a href="#tentang" class="mobile-menu__link">Tentang</a>
       <a href="#produk" class="mobile-menu__link">Produk</a>
+      <a href="#galeri" class="mobile-menu__link">Galeri</a>
+      <a href="#video" class="mobile-menu__link">Video</a>
       <a href="#keunggulan" class="mobile-menu__link">Keunggulan</a>
-      <a href="#sertifikasi" class="mobile-menu__link">Sertifikasi</a>
       <a href="#kontak" class="mobile-menu__link">Kontak</a>
       <a
         href="https://api.whatsapp.com/send?phone=6282168836677&text=Halo%2C%20saya%20ingin%20tahu%20lebih%20lanjut%20tentang%20Himudo."
@@ -222,74 +224,346 @@
       </div>
     </section>
 
-    <!-- PRODUK -->
+    <!-- PRODUK SLIDER (inspired by himudo.com product showcase / order section) -->
     <section class="section products" id="produk">
       <div class="container">
         <div class="section-head reveal">
           <h2 class="section-title">Pilih ukuran yang pas</h2>
-          <p class="section-desc">Dari cup acara sampai galon keluarga.</p>
+          <p class="section-desc">Geser atau biarkan slide berjalan - kenali setiap kemasan Himudo.</p>
+        </div>
+
+        <div
+          class="product-slider reveal"
+          id="productSlider"
+          role="region"
+          aria-roledescription="carousel"
+          aria-label="Slider produk Himudo"
+        >
+          <div class="product-slider__stage">
+            <!-- Slides -->
+            <div class="product-slider__viewport">
+              <div class="product-slider__track" id="productTrack">
+                <article class="pslide is-active" data-index="0" aria-hidden="false">
+                  <div class="pslide__media">
+                    <div class="pslide__glow" aria-hidden="true"></div>
+                    <img src="assets/images/product-cup.svg" alt="Himudo Cup 220 ml" width="180" height="240" />
+                  </div>
+                  <div class="pslide__copy">
+                    <span class="pslide__badge">Acara</span>
+                    <p class="pslide__size">220 ml</p>
+                    <h3>Himudo Cup</h3>
+                    <p>Cocok untuk acara bersama teman dan orang banyak. Ringan, praktis, siap dibagikan.</p>
+                    <ul class="pslide__meta">
+                      <li>Kemasan cup sekali pakai</li>
+                      <li>Ideal untuk meeting &amp; event</li>
+                      <li>pH seimbang &amp; kaya oksigen</li>
+                    </ul>
+                  </div>
+                </article>
+
+                <article class="pslide" data-index="1" aria-hidden="true">
+                  <div class="pslide__media">
+                    <div class="pslide__glow" aria-hidden="true"></div>
+                    <img src="assets/images/product-330.svg" alt="Himudo Botol 330 ml" width="140" height="260" />
+                  </div>
+                  <div class="pslide__copy">
+                    <span class="pslide__badge">On the go</span>
+                    <p class="pslide__size">330 ml</p>
+                    <h3>Botol Mini</h3>
+                    <p>Ukuran mini untuk dibawa kapan pun dan di mana pun. Pas di tas atau saku besar.</p>
+                    <ul class="pslide__meta">
+                      <li>Portabel sehari-hari</li>
+                      <li>Segel ganda higienis</li>
+                      <li>Mudah disimpan</li>
+                    </ul>
+                  </div>
+                </article>
+
+                <article class="pslide" data-index="2" aria-hidden="true">
+                  <div class="pslide__media">
+                    <div class="pslide__glow" aria-hidden="true"></div>
+                    <img src="assets/images/product-dumbell.svg" alt="Himudo Botol 500 ml Dumbell" width="150" height="260" />
+                  </div>
+                  <div class="pslide__copy">
+                    <span class="pslide__badge">Favorit</span>
+                    <p class="pslide__size">500 ml</p>
+                    <h3>Botol Dumbell</h3>
+                    <p>Berolahraga sambil minum air mineral sehat? Why not both? Bentuk barbel yang gampang digenggam.</p>
+                    <ul class="pslide__meta">
+                      <li>Desain ergonomis</li>
+                      <li>Cocok untuk gym &amp; outdoor</li>
+                      <li>Paling digemari komunitas</li>
+                    </ul>
+                  </div>
+                </article>
+
+                <article class="pslide" data-index="3" aria-hidden="true">
+                  <div class="pslide__media">
+                    <div class="pslide__glow" aria-hidden="true"></div>
+                    <img src="assets/images/product-600.svg" alt="Himudo Botol 600 ml" width="140" height="270" />
+                  </div>
+                  <div class="pslide__copy">
+                    <span class="pslide__badge">Hangout</span>
+                    <p class="pslide__size">600 ml</p>
+                    <h3>Botol Regular</h3>
+                    <p>Untuk hangout bareng teman atau di meja kerja. Volume pas, tidak ribet.</p>
+                    <ul class="pslide__meta">
+                      <li>Ukuran harian</li>
+                      <li>Nyaman digenggam</li>
+                      <li>Segar di setiap tegukan</li>
+                    </ul>
+                  </div>
+                </article>
+
+                <article class="pslide" data-index="4" aria-hidden="true">
+                  <div class="pslide__media">
+                    <div class="pslide__glow" aria-hidden="true"></div>
+                    <img src="assets/images/product-1500.svg" alt="Himudo Botol 1500 ml" width="150" height="280" />
+                  </div>
+                  <div class="pslide__copy">
+                    <span class="pslide__badge">Stok harian</span>
+                    <p class="pslide__size">1.500 ml</p>
+                    <h3>Botol Family</h3>
+                    <p>Untuk pekerja keras agar tidak dehidrasi seharian. Lebih hemat, lebih siap.</p>
+                    <ul class="pslide__meta">
+                      <li>Isi lebih besar</li>
+                      <li>Kantor &amp; perjalanan</li>
+                      <li>Kurang sering refill</li>
+                    </ul>
+                  </div>
+                </article>
+
+                <article class="pslide" data-index="5" aria-hidden="true">
+                  <div class="pslide__media">
+                    <div class="pslide__glow" aria-hidden="true"></div>
+                    <img src="assets/images/product-galon.svg" alt="Himudo Galon 19 Liter" width="170" height="260" />
+                  </div>
+                  <div class="pslide__copy">
+                    <span class="pslide__badge">Keluarga</span>
+                    <p class="pslide__size">19 Liter</p>
+                    <h3>Galon Himudo</h3>
+                    <p>Untuk di rumah dan keluarga. Dicuci 10 tahap, higienis sampai ke dispenser Anda.</p>
+                    <ul class="pslide__meta">
+                      <li>10x tahap pencucian</li>
+                      <li>Gratis ongkir Medan</li>
+                      <li>Stok rumah &amp; kantor</li>
+                    </ul>
+                  </div>
+                </article>
+              </div>
+            </div>
+
+            <!-- Controls -->
+            <div class="product-slider__controls">
+              <button type="button" class="pslide-btn" id="pslidePrev" aria-label="Produk sebelumnya">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M12.5 4.5L7 10l5.5 5.5" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </button>
+              <div class="product-slider__dots" id="productDots" role="tablist" aria-label="Pilih produk"></div>
+              <button type="button" class="pslide-btn" id="pslideNext" aria-label="Produk berikutnya">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M7.5 4.5L13 10l-5.5 5.5" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </button>
+            </div>
+
+            <!-- Progress autoplay bar -->
+            <div class="product-slider__progress" aria-hidden="true">
+              <div class="product-slider__progress-bar" id="productProgress"></div>
+            </div>
+          </div>
+
+          <!-- Thumbnail strip -->
+          <div class="product-slider__thumbs" id="productThumbs" role="tablist" aria-label="Thumbnail produk">
+            <button type="button" class="pslide-thumb is-active" data-goto="0" aria-label="Cup 220 ml" aria-selected="true">
+              <img src="assets/images/product-cup.svg" alt="" width="40" height="52" />
+              <span>220 ml</span>
+            </button>
+            <button type="button" class="pslide-thumb" data-goto="1" aria-label="Botol 330 ml" aria-selected="false">
+              <img src="assets/images/product-330.svg" alt="" width="32" height="52" />
+              <span>330 ml</span>
+            </button>
+            <button type="button" class="pslide-thumb" data-goto="2" aria-label="Dumbell 500 ml" aria-selected="false">
+              <img src="assets/images/product-dumbell.svg" alt="" width="36" height="52" />
+              <span>500 ml</span>
+            </button>
+            <button type="button" class="pslide-thumb" data-goto="3" aria-label="Botol 600 ml" aria-selected="false">
+              <img src="assets/images/product-600.svg" alt="" width="32" height="52" />
+              <span>600 ml</span>
+            </button>
+            <button type="button" class="pslide-thumb" data-goto="4" aria-label="Botol 1500 ml" aria-selected="false">
+              <img src="assets/images/product-1500.svg" alt="" width="34" height="52" />
+              <span>1.5 L</span>
+            </button>
+            <button type="button" class="pslide-thumb" data-goto="5" aria-label="Galon 19 L" aria-selected="false">
+              <img src="assets/images/product-galon.svg" alt="" width="40" height="52" />
+              <span>19 L</span>
+            </button>
+          </div>
+
+          <!-- Order CTA strip (about-us #Order style) -->
+          <div class="product-slider__order" id="order">
+            <div>
+              <h3>Free delivery di Medan</h3>
+              <p>Siap order? Tim kami antar gratis untuk area Medan dan sekitarnya.</p>
+            </div>
+            <a
+              href="https://api.whatsapp.com/send?phone=6282168836677&text=Halo%2C%20saya%20mau%20pesan%20air%20mineral%20Himudo."
+              class="btn btn--primary btn--lg"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Order sekarang
+            </a>
+          </div>
         </div>
       </div>
-
-      <div class="products__scroller" role="list" aria-label="Daftar produk Himudo">
-        <article class="product" role="listitem">
-          <div class="product__visual">
-            <img src="assets/images/product-cup.svg" alt="" width="120" height="160" />
-          </div>
-          <span class="product__size">220 ml</span>
-          <h3>Cup</h3>
-          <p>Untuk acara dan ramai-ramai.</p>
-        </article>
-
-        <article class="product" role="listitem">
-          <div class="product__visual">
-            <img src="assets/images/product-330.svg" alt="" width="90" height="170" />
-          </div>
-          <span class="product__size">330 ml</span>
-          <h3>Botol mini</h3>
-          <p>Ringan dibawa ke mana saja.</p>
-        </article>
-
-        <article class="product product--featured" role="listitem">
-          <span class="product__tag">Favorit</span>
-          <div class="product__visual">
-            <img src="assets/images/product-dumbell.svg" alt="" width="100" height="170" />
-          </div>
-          <span class="product__size">500 ml</span>
-          <h3>Dumbell</h3>
-          <p>Cocok buat olahraga dan aktifitas harian.</p>
-        </article>
-
-        <article class="product" role="listitem">
-          <div class="product__visual">
-            <img src="assets/images/product-600.svg" alt="" width="90" height="180" />
-          </div>
-          <span class="product__size">600 ml</span>
-          <h3>Regular</h3>
-          <p>Ukuran hangout dan kerja.</p>
-        </article>
-
-        <article class="product" role="listitem">
-          <div class="product__visual">
-            <img src="assets/images/product-1500.svg" alt="" width="95" height="185" />
-          </div>
-          <span class="product__size">1.500 ml</span>
-          <h3>Family bottle</h3>
-          <p>Stok seharian tanpa dehidrasi.</p>
-        </article>
-
-        <article class="product product--featured" role="listitem">
-          <span class="product__tag">Keluarga</span>
-          <div class="product__visual">
-            <img src="assets/images/product-galon.svg" alt="" width="110" height="170" />
-          </div>
-          <span class="product__size">19 L</span>
-          <h3>Galon</h3>
-          <p>Untuk rumah dan kantor.</p>
-        </article>
-      </div>
-      <p class="products__hint" aria-hidden="true">Geser untuk melihat semua ukuran</p>
     </section>
+
+    <!-- GALERI FOTO — 4×4 collage pages, swipe for more -->
+    <section class="section gallery" id="galeri" aria-label="Galeri foto Himudo">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2 class="section-title">Galeri</h2>
+          <p class="section-desc">Kolase 4×4. Geser kiri/kanan untuk halaman berikutnya.</p>
+        </div>
+
+        <div
+          class="gallery-collage reveal"
+          id="galleryCollage"
+          role="region"
+          aria-roledescription="carousel"
+          aria-label="Kolase foto Himudo"
+          tabindex="0"
+        >
+          <div class="gallery-collage__viewport">
+            <div class="gallery-collage__track" id="galleryTrack">
+              <!-- 4×4 pages injected from manifest -->
+            </div>
+          </div>
+
+          <div class="gallery-collage__bar">
+            <button type="button" class="gallery-collage__btn" id="galleryPrev" aria-label="Halaman sebelumnya">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M12.5 4.5L7 10l5.5 5.5" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+            <div class="gallery-collage__pager" id="galleryPager" aria-live="polite">1 / 1</div>
+            <button type="button" class="gallery-collage__btn" id="galleryNext" aria-label="Halaman berikutnya">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M7.5 4.5L13 10l-5.5 5.5" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+          </div>
+
+          <div class="gallery-collage__dots" id="galleryDots" role="tablist" aria-label="Halaman galeri"></div>
+        </div>
+
+        <p class="gallery__credit reveal">
+          Sumber: media resmi Himudo &amp;
+          <a href="https://www.instagram.com/himudo/" target="_blank" rel="noopener noreferrer">@himudo</a>
+        </p>
+      </div>
+    </section>
+
+    <!-- Image lightbox -->
+    <div class="img-modal" id="imgModal" hidden>
+      <div class="img-modal__backdrop" data-close-img></div>
+      <div class="img-modal__dialog" role="dialog" aria-modal="true" aria-label="Pratinjau foto">
+        <button type="button" class="img-modal__close" data-close-img aria-label="Tutup">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6L6 18M6 6l12 12"/></svg>
+        </button>
+        <button type="button" class="img-modal__nav img-modal__nav--prev" id="imgPrev" aria-label="Foto sebelumnya">
+          <svg width="22" height="22" viewBox="0 0 20 20" fill="none"><path d="M12.5 4.5L7 10l5.5 5.5" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <button type="button" class="img-modal__nav img-modal__nav--next" id="imgNext" aria-label="Foto berikutnya">
+          <svg width="22" height="22" viewBox="0 0 20 20" fill="none"><path d="M7.5 4.5L13 10l-5.5 5.5" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <img class="img-modal__img" id="imgModalImg" alt="" />
+      </div>
+    </div>
+
+    <!-- VIDEO -->
+    <section class="section videos" id="video">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2 class="section-title">Video Himudo</h2>
+          <p class="section-desc">Company profile, proses higienis, dan cerita di balik setiap tetes.</p>
+        </div>
+
+        <div class="videos__grid">
+          <!-- Featured: Company Profile -->
+          <article class="video-card video-card--featured reveal" data-video-type="youtube" data-video-id="Qk3_b_CkmtA">
+            <button type="button" class="video-card__play" aria-label="Putar Company Profile Air Mineral Himudo">
+              <span class="video-card__thumb" style="--thumb: url('https://i.ytimg.com/vi/Qk3_b_CkmtA/hqdefault.jpg')">
+                <span class="video-card__icon" aria-hidden="true">
+                  <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                </span>
+              </span>
+              <span class="video-card__meta">
+                <span class="video-card__tag">Featured</span>
+                <h3>Company Profile Air Mineral Himudo</h3>
+                <p>Lebih dari 10 tahun bergerak maju bersama pelanggan di Medan.</p>
+              </span>
+            </button>
+          </article>
+
+          <article class="video-card reveal" data-video-type="youtube" data-video-id="u3WjzO8L2b4">
+            <button type="button" class="video-card__play" aria-label="Putar Air Minum Himudo Higienis">
+              <span class="video-card__thumb" style="--thumb: url('https://i.ytimg.com/vi/u3WjzO8L2b4/hqdefault.jpg')">
+                <span class="video-card__icon" aria-hidden="true">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                </span>
+              </span>
+              <span class="video-card__meta">
+                <h3>Higienis &amp; Teruji Standar Internasional</h3>
+                <p>Proses produksi, sanitasi, dan janji kualitas di setiap tetes.</p>
+              </span>
+            </button>
+          </article>
+
+          <article class="video-card reveal" data-video-type="youtube" data-video-id="xJNVM0zmlqg">
+            <button type="button" class="video-card__play" aria-label="Putar Tentang Himudo">
+              <span class="video-card__thumb" style="--thumb: url('https://i.ytimg.com/vi/xJNVM0zmlqg/hqdefault.jpg')">
+                <span class="video-card__icon" aria-hidden="true">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                </span>
+              </span>
+              <span class="video-card__meta">
+                <h3>Tentang Himudo</h3>
+                <p>Air mineral untuk mencukupi kebutuhan mineral harian Anda.</p>
+              </span>
+            </button>
+          </article>
+
+          <article class="video-card reveal" data-video-type="youtube" data-video-id="-ZS7PWU5tLw">
+            <button type="button" class="video-card__play" aria-label="Putar Workout Sehat Bersama Himudo">
+              <span class="video-card__thumb" style="--thumb: url('https://i.ytimg.com/vi/-ZS7PWU5tLw/hqdefault.jpg')">
+                <span class="video-card__icon" aria-hidden="true">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                </span>
+              </span>
+              <span class="video-card__meta">
+                <h3>Workout Sehat Bersama Himudo</h3>
+                <p>Aktifitas sehat ditemani air mineral kaya oksigen.</p>
+              </span>
+            </button>
+          </article>
+
+          <!-- Local videos injected here by JS if files exist in assets/videos/ -->
+          <div id="localVideos" class="videos__local" hidden></div>
+        </div>
+
+        <p class="videos__channel reveal">
+          Channel resmi:
+          <a href="https://www.youtube.com/channel/UCLJ9TdLB00xHRn0p7H5HFPA" target="_blank" rel="noopener noreferrer">YouTube Himudo</a>
+        </p>
+      </div>
+    </section>
+
+    <!-- Video lightbox modal -->
+    <div class="video-modal" id="videoModal" hidden>
+      <div class="video-modal__backdrop" data-close-video></div>
+      <div class="video-modal__dialog" role="dialog" aria-modal="true" aria-label="Pemutar video">
+        <button type="button" class="video-modal__close" data-close-video aria-label="Tutup video">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6L6 18M6 6l12 12"/></svg>
+        </button>
+        <div class="video-modal__frame" id="videoModalFrame"></div>
+      </div>
+    </div>
 
     <!-- SERTIFIKASI -->
     <section class="section certs" id="sertifikasi">
@@ -351,36 +625,37 @@
       </div>
       <div class="clients__marquee">
         <div class="clients__track">
-          <span>Kasimura</span>
-          <span>Maybank</span>
-          <span>Nirvana</span>
-          <span>Hypermart</span>
-          <span>Irian</span>
-          <span>Smarco</span>
-          <span>Yuki</span>
-          <span>OCBC NISP</span>
-          <span>ID Express</span>
-          <span>Columbia Asia</span>
-          <span>UOB</span>
-          <span>J.CO</span>
-          <span>Bank Sinarmas</span>
-          <span>IDcommerce</span>
-          <span>Tanto</span>
-          <span aria-hidden="true">Kasimura</span>
-          <span aria-hidden="true">Maybank</span>
-          <span aria-hidden="true">Nirvana</span>
-          <span aria-hidden="true">Hypermart</span>
-          <span aria-hidden="true">Irian</span>
-          <span aria-hidden="true">Smarco</span>
-          <span aria-hidden="true">Yuki</span>
-          <span aria-hidden="true">OCBC NISP</span>
-          <span aria-hidden="true">ID Express</span>
-          <span aria-hidden="true">Columbia Asia</span>
-          <span aria-hidden="true">UOB</span>
-          <span aria-hidden="true">J.CO</span>
-          <span aria-hidden="true">Bank Sinarmas</span>
-          <span aria-hidden="true">IDcommerce</span>
-          <span aria-hidden="true">Tanto</span>
+          <div class="client-logo"><img src="assets/images/clients/kasimura.png" alt="Kasimura" width="160" height="84" loading="lazy" /></div>
+          <div class="client-logo"><img src="assets/images/clients/maybank.png" alt="Bank Maybank" width="160" height="84" loading="lazy" /></div>
+          <div class="client-logo"><img src="assets/images/clients/nirvana.png" alt="Nirvana" width="160" height="84" loading="lazy" /></div>
+          <div class="client-logo"><img src="assets/images/clients/hypermart.png" alt="Hypermart" width="160" height="84" loading="lazy" /></div>
+          <div class="client-logo"><img src="assets/images/clients/irian.png" alt="Irian" width="160" height="84" loading="lazy" /></div>
+          <div class="client-logo"><img src="assets/images/clients/smarco.png" alt="Smarco" width="160" height="84" loading="lazy" /></div>
+          <div class="client-logo"><img src="assets/images/clients/yuki.png" alt="Yuki" width="160" height="84" loading="lazy" /></div>
+          <div class="client-logo"><img src="assets/images/clients/ocbc.png" alt="Bank OCBC NISP" width="160" height="84" loading="lazy" /></div>
+          <div class="client-logo"><img src="assets/images/clients/idexpress.png" alt="ID Express" width="160" height="84" loading="lazy" /></div>
+          <div class="client-logo"><img src="assets/images/clients/columbia.png" alt="Columbia Asia" width="160" height="84" loading="lazy" /></div>
+          <div class="client-logo"><img src="assets/images/clients/uob.png" alt="Bank UOB" width="160" height="84" loading="lazy" /></div>
+          <div class="client-logo"><img src="assets/images/clients/jco.png" alt="J.CO" width="160" height="84" loading="lazy" /></div>
+          <div class="client-logo"><img src="assets/images/clients/sinarmas.png" alt="Bank Sinarmas" width="160" height="84" loading="lazy" /></div>
+          <div class="client-logo"><img src="assets/images/clients/idcommerce.png" alt="IDcommerce" width="160" height="84" loading="lazy" /></div>
+          <div class="client-logo"><img src="assets/images/clients/tanto.png" alt="Tanto" width="160" height="84" loading="lazy" /></div>
+          <!-- duplicate set for seamless marquee loop -->
+          <div class="client-logo" aria-hidden="true"><img src="assets/images/clients/kasimura.png" alt="" width="160" height="84" loading="lazy" /></div>
+          <div class="client-logo" aria-hidden="true"><img src="assets/images/clients/maybank.png" alt="" width="160" height="84" loading="lazy" /></div>
+          <div class="client-logo" aria-hidden="true"><img src="assets/images/clients/nirvana.png" alt="" width="160" height="84" loading="lazy" /></div>
+          <div class="client-logo" aria-hidden="true"><img src="assets/images/clients/hypermart.png" alt="" width="160" height="84" loading="lazy" /></div>
+          <div class="client-logo" aria-hidden="true"><img src="assets/images/clients/irian.png" alt="" width="160" height="84" loading="lazy" /></div>
+          <div class="client-logo" aria-hidden="true"><img src="assets/images/clients/smarco.png" alt="" width="160" height="84" loading="lazy" /></div>
+          <div class="client-logo" aria-hidden="true"><img src="assets/images/clients/yuki.png" alt="" width="160" height="84" loading="lazy" /></div>
+          <div class="client-logo" aria-hidden="true"><img src="assets/images/clients/ocbc.png" alt="" width="160" height="84" loading="lazy" /></div>
+          <div class="client-logo" aria-hidden="true"><img src="assets/images/clients/idexpress.png" alt="" width="160" height="84" loading="lazy" /></div>
+          <div class="client-logo" aria-hidden="true"><img src="assets/images/clients/columbia.png" alt="" width="160" height="84" loading="lazy" /></div>
+          <div class="client-logo" aria-hidden="true"><img src="assets/images/clients/uob.png" alt="" width="160" height="84" loading="lazy" /></div>
+          <div class="client-logo" aria-hidden="true"><img src="assets/images/clients/jco.png" alt="" width="160" height="84" loading="lazy" /></div>
+          <div class="client-logo" aria-hidden="true"><img src="assets/images/clients/sinarmas.png" alt="" width="160" height="84" loading="lazy" /></div>
+          <div class="client-logo" aria-hidden="true"><img src="assets/images/clients/idcommerce.png" alt="" width="160" height="84" loading="lazy" /></div>
+          <div class="client-logo" aria-hidden="true"><img src="assets/images/clients/tanto.png" alt="" width="160" height="84" loading="lazy" /></div>
         </div>
       </div>
     </section>

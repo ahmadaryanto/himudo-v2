@@ -17,3 +17,11 @@ Desktop.ini
 test-results/
 playwright-report/
 blob-report/
+
+# Scrape reports
+**/download-report.json
+**/scrape-report.json
+demo/*-scrape.json
+demo/yt-videos.json
+demo/about-order.png
+demo/instagram-himudo.png

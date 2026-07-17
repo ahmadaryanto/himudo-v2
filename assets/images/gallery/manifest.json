@@ -1,0 +1,26 @@
+{
+  "generatedAt": "2026-07-18",
+  "note": "Instagram blocks most scrapes; photos collected from himudo.com media + partial IG CDN assets.",
+  "images": [
+    { "file": "ig-01.webp", "alt": "Himudo Instagram", "span": "wide" },
+    { "file": "menu-utama3.jpg", "alt": "Himudo product display" },
+    { "file": "550-ml-barbel.jpg", "alt": "Himudo dumbell bottle 550 ml" },
+    { "file": "galon-scaled.jpg", "alt": "Himudo galon 19 liter" },
+    { "file": "sf-23-scaled.jpg", "alt": "Himudo lifestyle" },
+    { "file": "dsc03300-scaled.jpg", "alt": "Himudo photo" },
+    { "file": "produk.png", "alt": "Himudo product lineup", "span": "wide" },
+    { "file": "330ml-scaled.jpg", "alt": "Himudo 330 ml bottle" },
+    { "file": "1500ml-scaled.jpg", "alt": "Himudo 1500 ml bottle" },
+    { "file": "cup-white-220-ml.jpg", "alt": "Himudo cup 220 ml" },
+    { "file": "600-ml-scaled.jpg", "alt": "Himudo 600 ml bottle" },
+    { "file": "screenshot_10.png", "alt": "Himudo production" },
+    { "file": "125910253_751485015799264_7476731197604924543_n-300x300.jpg", "alt": "Himudo Instagram post" },
+    { "file": "135340918_395274998246333_3773939859479471635_n-300x300.jpg", "alt": "Himudo Instagram post" },
+    { "file": "569408675_18535467898062290_7503378496900948999_n.webp", "alt": "Himudo Instagram" },
+    { "file": "482334266_18487233865062290_1667811432461444184_n.webp", "alt": "Himudo Instagram" },
+    { "file": "493749390_18499738645062290_8022136281857632769_n.webp", "alt": "Himudo Instagram" },
+    { "file": "541929717_18523373761062290_133768154833659730_n.webp", "alt": "Himudo Instagram" },
+    { "file": "488537770_18494799808062290_8858681650452080828_n.webp", "alt": "Himudo Instagram" },
+    { "file": "658369926_18574479817062290_5742793358873982777_n.webp", "alt": "Himudo Instagram" }
+  ]
+}
